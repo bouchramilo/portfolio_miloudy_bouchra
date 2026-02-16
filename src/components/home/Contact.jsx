@@ -36,12 +36,12 @@ export default function Contact() {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-bold text-white">Email</h4>
-                                <p className="text-sm text-gray-300">contact@example.com</p>
+                                <p className="text-sm text-gray-300">miloudybouchra01@gmail.com</p>
                             </div>
                         </a>
 
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/bouchra-miloudy-197824329/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-3 p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-colors group"
@@ -56,7 +56,7 @@ export default function Contact() {
                         </a>
 
                         <a
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/bou13chra27?igsh=Z3FoeXRkdmdjYjUz"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-3 p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-colors group"
@@ -71,7 +71,7 @@ export default function Contact() {
                         </a>
 
                         <a
-                            href="https://github.com"
+                            href="https://github.com/bouchramilo"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-3 p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-colors group"

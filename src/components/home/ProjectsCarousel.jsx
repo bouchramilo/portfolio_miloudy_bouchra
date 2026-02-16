@@ -16,9 +16,6 @@ export default function ProjectsCarousel() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <span className="text-light-primary dark:text-dark-primary font-bold tracking-wider uppercase mb-2 block">
-                        Portfolio
-                    </span>
                     <h2 className="text-3xl md:text-4xl font-heading font-bold text-light-text dark:text-dark-text mb-4">
                         Projets Récents
                     </h2>

@@ -13,10 +13,10 @@ export default function About() {
                         transition={{ duration: 0.6 }}
                         className="w-full md:w-1/2 flex justify-center"
                     >
-                        <div className="relative w-64 h-64 md:w-80 md:h-80">
+                        <div className="relative w-80 h-80 md:w-96 md:h-96">
                             <div className="absolute inset-0 border-2 border-light-primary dark:border-dark-primary rounded-full transform translate-x-4 translate-y-4" />
                             <img
-                                src="https://placehold.co/400x400?text=Photo+Profil"
+                                src="/assets/images/photos/photo_2.JPG"
                                 alt="Miloudy Bouchra"
                                 className="w-full h-full object-cover rounded-full shadow-lg z-10 relative"
                             />
@@ -48,11 +48,11 @@ export default function About() {
                         <div className="grid grid-cols-2 gap-4 mt-8">
                             <div className="border-l-4 border-light-primary dark:border-dark-primary pl-4">
                                 <h4 className="font-bold text-light-text dark:text-dark-text">Expérience</h4>
-                                <p className="text-sm text-light-muted dark:text-dark-muted">2+ Ans</p>
+                                <p className="text-sm text-light-muted dark:text-dark-muted">1+ Ans</p>
                             </div>
                             <div className="border-l-4 border-light-secondary dark:border-dark-secondary pl-4">
                                 <h4 className="font-bold text-light-text dark:text-dark-text">Projets</h4>
-                                <p className="text-sm text-light-muted dark:text-dark-muted">10+ Réalisés</p>
+                                <p className="text-sm text-light-muted dark:text-dark-muted">20+ Réalisés</p>
                             </div>
                         </div>
                     </motion.div>

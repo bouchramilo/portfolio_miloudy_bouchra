@@ -18,19 +18,19 @@ export default function Footer() {
 
                     {/* Social Links */}
                     <div className="flex space-x-6">
-                        <a href="mailto:contact@example.com" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
+                        <a href="mailto:miloudybouchra01@gmail.com" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
                             <Mail size={20} />
                             <span className="sr-only">Email</span>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/bouchra-miloudy-197824329/" target="_blank" rel="noopener noreferrer" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
                             <Linkedin size={20} />
                             <span className="sr-only">LinkedIn</span>
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
+                        <a href="https://www.instagram.com/bou13chra27?igsh=Z3FoeXRkdmdjYjUz" target="_blank" rel="noopener noreferrer" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
                             <Instagram size={20} />
                             <span className="sr-only">Instagram</span>
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
+                        <a href="https://github.com/bouchramilo" target="_blank" rel="noopener noreferrer" className="text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors">
                             <Github size={20} />
                             <span className="sr-only">GitHub</span>
                         </a>

@@ -77,7 +77,7 @@ function FloatingParticles() {
                 <Float key={i} speed={1} rotationIntensity={0.5} floatIntensity={0.5}>
                     <Text
                         position={p.position}
-                        fontSize={0.4}
+                        fontSize={0.7}
                         color={p.color}
                         fillOpacity={0.2} // Subtler
                         maxWidth={3}
@@ -108,7 +108,7 @@ function SkillPageContent({ category }) {
                 {category.items.map((skill, idx) => (
                     <li key={idx} className="flex items-center gap-4 text-slate-300 font-medium">
                         <CheckCircle className={`w-8 h-8 ${checkColors[category.category]}`} />
-                        <span className="text-2xl">{skill.name}</span>
+                        <span className="text-3xl">{skill.name}</span>
                     </li>
                 ))}
             </ul>
@@ -171,7 +171,7 @@ export default function Skills() {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl md:text-4xl font-heading font-bold text-light-text dark:text-dark-text mb-4">
-                        Arsenal Technique
+                        Les compétences
                     </h2>
                     <div className="w-20 h-1 bg-light-primary dark:bg-dark-primary mx-auto"></div>
                     <p className="text-light-muted dark:text-dark-muted mt-4">

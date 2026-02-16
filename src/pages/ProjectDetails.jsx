@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Github, ExternalLink, Calendar, Code } from 'lucide-react';
 import { projects } from '../data/projects';
+import ParticleBackground from '../components/common/ParticleBackground';
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -19,8 +20,9 @@ export default function ProjectDetails() {
     }
 
     return (
-        <div className="min-h-screen py-20 bg-light-background dark:bg-dark-background">
-            <div className="container mx-auto px-4 max-w-4xl">
+        <div className="min-h-screen py-20 bg-light-background dark:bg-dark-background relative">
+            <ParticleBackground />
+            <div className="container mx-auto px-4 max-w-4xl relative z-10">
                 <Link
                     to="/projects"
                     className="inline-flex items-center gap-2 text-light-muted dark:text-dark-muted hover:text-light-primary dark:hover:text-dark-primary transition-colors mb-8"
@@ -77,14 +79,10 @@ export default function ProjectDetails() {
 
                     {/* Content */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                        <div className="md:col-span-2 space-y-6">
+                        <div className="md:col-span-2 space-y-6 backdrop-blur-md p-6">
                             <h2 className="text-2xl font-bold text-light-text dark:text-dark-text">À propos du projet</h2>
                             <p className="text-light-muted dark:text-dark-muted leading-relaxed text-lg">
                                 {project.description}
-                            </p>
-                            <p className="text-light-muted dark:text-dark-muted leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
 

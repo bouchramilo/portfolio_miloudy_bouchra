@@ -36,7 +36,13 @@ export default function Header() {
         }
     };
 
-    const isActive = (path) => location.pathname === path;
+    const isActive = (path) => {
+        if (path.includes('#')) {
+            const [pathname, hash] = path.split('#');
+            return location.pathname === pathname && location.hash === `#${hash}`;
+        }
+        return location.pathname === path;
+    };
 
     return (
         <header className="fixed top-0 w-full bg-light-background/80 dark:bg-dark-background/80 backdrop-blur-md z-50 border-b border-light-secondary/20 dark:border-dark-secondary/20 transition-colors duration-300">
@@ -44,7 +50,7 @@ export default function Header() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link to="/" className="text-2xl font-heading font-bold text-light-primary dark:text-dark-primary">
-                        Miloudy Bouchra
+                        <span className="text-light-secondary dark:text-dark-secondary">B</span>.<span className="text-light-primary dark:text-dark-primary">M</span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -54,18 +60,18 @@ export default function Header() {
                                 key={item.name}
                                 to={item.path}
                                 className={`text-sm font-medium transition-colors duration-200 ${isActive(item.path)
-                                        ? 'text-light-primary dark:text-dark-primary'
-                                        : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
+                                    ? 'text-light-primary dark:text-dark-primary'
+                                    : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
                                     }`}
                             >
                                 {item.name}
                             </Link>
                         ))}
                         <Link
-                            to="/contact"
-                            className={`text-sm font-medium transition-colors duration-200 ${isActive('/contact')
-                                    ? 'text-light-primary dark:text-dark-primary'
-                                    : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
+                            to="/#contact"
+                            className={`text-sm font-medium transition-colors duration-200 ${isActive('/#contact')
+                                ? 'text-light-primary dark:text-dark-primary'
+                                : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
                                 }`}
                         >
                             Contact
@@ -109,19 +115,19 @@ export default function Header() {
                                 to={item.path}
                                 onClick={() => setIsMenuOpen(false)}
                                 className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(item.path)
-                                        ? 'text-light-primary dark:text-dark-primary bg-light-primary/10 dark:bg-dark-primary/10'
-                                        : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
+                                    ? 'text-light-primary dark:text-dark-primary bg-light-primary/10 dark:bg-dark-primary/10'
+                                    : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
                                     }`}
                             >
                                 {item.name}
                             </Link>
                         ))}
                         <Link
-                            to="/contact"
+                            to="/#contact"
                             onClick={() => setIsMenuOpen(false)}
-                            className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact')
-                                    ? 'text-light-primary dark:text-dark-primary bg-light-primary/10 dark:bg-dark-primary/10'
-                                    : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
+                            className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/#contact')
+                                ? 'text-light-primary dark:text-dark-primary bg-light-primary/10 dark:bg-dark-primary/10'
+                                : 'text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary'
                                 }`}
                         >
                             Contact

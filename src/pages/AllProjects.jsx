@@ -6,15 +6,23 @@ import { projects } from '../data/projects';
 
 export default function AllProjects() {
     const [activeFilter, setActiveFilter] = useState("Tous");
-    const [activeTech, setActiveTech] = useState("Tous");
+    const [activeTechs, setActiveTechs] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
 
-    const filteredProjects = projects.filter((project) => {
-        // Filter by Type
-        const matchType = activeFilter === "Tous" || project.type === activeFilter;
+    const toggleTech = (tech) => {
+        setActiveTechs(prev =>
+            prev.includes(tech)
+                ? prev.filter(t => t !== tech)
+                : [...prev, tech]
+        );
+    };
 
-        // Filter by Tech
-        const matchTech = activeTech === "Tous" || project.technologies.includes(activeTech);
+    const filteredProjects = projects.filter((project) => {
+        // Filter by Type (project.type is now an array)
+        const matchType = activeFilter === "Tous" || project.type.includes(activeFilter);
+
+        // Filter by Tech (Match ANY selected tech, or all if none selected)
+        const matchTech = activeTechs.length === 0 || activeTechs.some(tech => project.technologies.includes(tech));
 
         // Filter by Search Query
         const matchSearch =
@@ -45,8 +53,8 @@ export default function AllProjects() {
                     setActiveFilter={setActiveFilter}
                     searchQuery={searchQuery}
                     setSearchQuery={setSearchQuery}
-                    activeTech={activeTech}
-                    setActiveTech={setActiveTech}
+                    activeTechs={activeTechs}
+                    toggleTech={toggleTech}
                 />
 
                 <motion.div
@@ -73,7 +81,7 @@ export default function AllProjects() {
                     <div className="text-center py-20 text-light-muted dark:text-dark-muted">
                         <p className="text-xl">Aucun projet ne correspond à vos critères.</p>
                         <button
-                            onClick={() => { setActiveFilter("Tous"); setActiveTech("Tous"); setSearchQuery(""); }}
+                            onClick={() => { setActiveFilter("Tous"); setActiveTechs([]); setSearchQuery(""); }}
                             className="mt-4 text-light-primary dark:text-dark-primary hover:underline"
                         >
                             Réinitialiser les filtres

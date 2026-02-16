@@ -36,8 +36,12 @@ export default function ProjectCard({ project }) {
                         </a>
                     )}
                 </div>
-                <div className="absolute top-2 right-2 px-2 py-1 bg-light-primary dark:bg-dark-primary text-white text-xs font-bold rounded">
-                    {project.type}
+                <div className="absolute top-2 right-2 flex gap-2">
+                    {project.type.map((t) => (
+                        <span key={t} className="px-2 py-1 bg-light-primary dark:bg-dark-primary text-white text-xs font-bold rounded shadow-sm">
+                            {t}
+                        </span>
+                    ))}
                 </div>
             </div>
 

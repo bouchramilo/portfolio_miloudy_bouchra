@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text">
+    <div id="contact" className="min-h-screen bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text">
       <div className="max-w-2xl mx-auto px-4 py-16">
         <h1 className="text-5xl font-bold text-light-primary dark:text-dark-primary mb-8 text-center">
           Nous Contacter

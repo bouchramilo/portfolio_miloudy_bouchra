@@ -4,6 +4,7 @@ import Education from '../components/home/Education';
 import Experience from '../components/home/Experience';
 import Skills from '../components/home/Skills';
 import ProjectsCarousel from '../components/home/ProjectsCarousel';
+import Certificats from '../components/home/Certificats';
 import Contact from '../components/home/Contact';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <ProjectsCarousel />
+      <Certificats />
       <Contact />
     </>
   );
