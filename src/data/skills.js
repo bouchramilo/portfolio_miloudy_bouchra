@@ -34,7 +34,9 @@ export const skills = [
             { name: "TensorFlow / PyTorch" },
             { name: "Keras / Scikit-learn" },
             { name: "Spark MLlib" },
-            { name: "Transfer Learning" }
+            { name: "Transfer Learning" },
+            { name: "MLflow" },
+            { name: "MLOps" }
         ]
     },
     {
@@ -81,7 +83,9 @@ export const skills = [
             { name: "SpaCy" },
             { name: "NER / Embeddings" },
             { name: "LLMs / Prompt Engineering" },
-            { name: "RAG" }
+            { name: "RAG" },
+            { name: "LangChain" },
+            { name: "LLMOps" }
         ]
     },
     {
@@ -97,7 +101,9 @@ export const skills = [
         items: [
             { name: "Microsoft Azure" },
             { name: "CI/CD Pipelines" },
-            { name: "GitHub Actions" }
+            { name: "GitHub Actions" },
+            { name: "Kubernetes" },
+            { name: "Monitoring (Prometheus, Grafana)" }
         ]
     }
 ];
