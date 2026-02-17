@@ -137,5 +137,30 @@ export const projects = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbpywMu2PfShoaP3gxPP2HqEMEjOhsr4qtg&s",
         githubUrl: "https://github.com/bouchramilo/SmartLogAI",
         demoUrl: "#"
+    },
+    {
+        "id": 14,
+        "title": "MediAssist",
+        "description": "MediAssist Pro est un assistant IA basé sur une architecture RAG optimisée permettant aux laboratoires d’accéder instantanément à la documentation technique et aux guides de dépannage des équipements biomédicaux. Le système combine LangChain, LLM, vectorisation d’embeddings et recherche sémantique pour fournir des réponses précises, sourcées et actionnables. Le projet intègre une API sécurisée (JWT), un pipeline LLMOps avec MLflow, une CI/CD vers Kubernetes, ainsi qu’un monitoring complet avec Prometheus et Grafana.",
+        "type": ["IA",],
+        "technologies": [
+            "Python", 
+            "FastAPI",
+            "LangChain",
+            "PostgreSQL",
+            "ChromaDB",
+            "MLflow",
+            "LLMOps", 
+            "DeepEval",
+            "Docker",
+            "Kubernetes",
+            "Prometheus",
+            "Grafana",
+            "JWT"
+        ],
+        "image": "assets/images/projects/mediassist.png",
+        "githubUrl": "https://github.com/bouchramilo/MediAssist",
+        "demoUrl": "#"
     }
+
 ];
