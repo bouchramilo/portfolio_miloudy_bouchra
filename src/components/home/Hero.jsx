@@ -22,7 +22,7 @@ export default function Hero() {
                         Miloudy Bouchra
                     </h1>
                     <p className="text-xl md:text-2xl text-light-muted dark:text-dark-muted mb-8 max-w-2xl mx-auto">
-                        Développeuse Full Stack & Passionnée d'IA. <br />
+                        Développeuse Full Stack & IA. <br />
                         Je transforme des idées complexes en expériences numériques élégantes.
                     </p>
 
