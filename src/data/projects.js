@@ -139,28 +139,25 @@ export const projects = [
         demoUrl: "#"
     },
     {
-        "id": 14,
-        "title": "MediAssist",
-        "description": "MediAssist Pro est un assistant IA basé sur une architecture RAG optimisée permettant aux laboratoires d’accéder instantanément à la documentation technique et aux guides de dépannage des équipements biomédicaux. Le système combine LangChain, LLM, vectorisation d’embeddings et recherche sémantique pour fournir des réponses précises, sourcées et actionnables. Le projet intègre une API sécurisée (JWT), un pipeline LLMOps avec MLflow, une CI/CD vers Kubernetes, ainsi qu’un monitoring complet avec Prometheus et Grafana.",
-        "type": ["IA",],
-        "technologies": [
-            "Python", 
-            "FastAPI",
-            "LangChain",
-            "PostgreSQL",
-            "ChromaDB",
-            "MLflow",
-            "LLMOps", 
-            "DeepEval",
-            "Docker",
-            "Kubernetes",
-            "Prometheus",
-            "Grafana",
-            "JWT"
-        ],
-        "image": "assets/images/projects/mediassist.png",
-        "githubUrl": "https://github.com/bouchramilo/MediAssist",
-        "demoUrl": "#"
+        id: 14,
+        title: "MediAssist",
+        description: "MediAssist Pro est un assistant IA basé sur une architecture RAG optimisée permettant aux laboratoires d’accéder instantanément à la documentation technique et aux guides de dépannage des équipements biomédicaux. Le système combine LangChain, LLM, vectorisation d’embeddings et recherche sémantique pour fournir des réponses précises, sourcées et actionnables. Le projet intègre une API sécurisée (JWT), un pipeline LLMOps avec MLflow, une CI/CD vers Kubernetes, ainsi qu’un monitoring complet avec Prometheus et Grafana.",
+        type: ["IA"],
+        technologies: ["Python", "FastAPI", "LangChain", "PostgreSQL", "ChromaDB", "MLflow", "LLMOps", "DeepEval", "Docker", "Kubernetes", "Prometheus", "Grafana", "JWT"],
+        image: "/assets/images/projects/mediassist.png",
+        githubUrl: "https://github.com/bouchramilo/MediAssist",
+        demoUrl: "#"
+    },
+    {
+        id: 15,
+        title: "Pipeline MLOps – Déploiement & Monitoring d’un Service de Prédiction ML",
+        description: "Projet réalisé en binôme consistant à concevoir une chaîne MLOps complète pour le déploiement d’un modèle de Machine Learning via une API FastAPI. Le système intègre le tracking et le versioning des modèles avec MLflow, une pipeline CI/CD automatisée avec GitHub Actions, la conteneurisation Docker et un monitoring temps réel avec Prometheus et Grafana. L’API expose des métriques (/metrics) permettant de superviser la latence, les erreurs, les performances et l’état du conteneur en production.",
+        type: ["IA"],
+        technologies: ["Python","FastAPI","Scikit-learn","MLflow","Docker","GitHub Actions","Prometheus","Grafana","Pytest","MLOps"],
+        image: "/assets/images/projects/MLOpsFlow.png",
+        githubUrl: "https://github.com/bouchramilo/MLOpsFlow",
+        demoUrl: "#"
     }
+
 
 ];
