@@ -47,10 +47,10 @@ export default function Header() {
     return (
         <header className="fixed top-0 w-full bg-light-background/80 dark:bg-dark-background/80 backdrop-blur-md z-50 border-b border-light-secondary/20 dark:border-dark-secondary/20 transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-16 md:h-24">
                     {/* Logo */}
                     <Link to="/" className="text-2xl font-heading font-bold text-light-primary dark:text-dark-primary">
-                        <span className="text-light-secondary dark:text-dark-secondary">B</span>.<span className="text-light-primary dark:text-dark-primary">M</span>
+                        <img src="/assets/my_logo_1.png" alt="my logo" className="h-14 md:h-20 w-auto object-contain" />
                     </Link>
 
                     {/* Desktop Navigation */}
