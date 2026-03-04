@@ -108,6 +108,34 @@ export const projects = [
         githubUrl: "https://github.com/bouchramilo/News_Classifier",
         demoUrl: "#"
     },
+    // {
+    //     id: 17,
+    //     title: "MediAssist Pro – Assistant Cognitif de Maintenance Biomédicale",
+    //     description: "Conception et déploiement d’un assistant IA basé sur une architecture Retrieval-Augmented Generation (RAG) permettant aux techniciens de laboratoire d’accéder instantanément à la documentation technique et aux guides de dépannage à partir de manuels PDF indexés. Implémentation d’un pipeline RAG complet (chunking optimisé, embeddings, vector store, retrieval avancé et reranking, génération LLM avec prompt engineering). Intégration d’une approche LLMOps avec MLflow (tracking des paramètres et métriques RAG via DeepEval), pipeline CI/CD vers Kubernetes (Docker, GitHub Actions, Minikube) et monitoring temps réel avec Prometheus & Grafana.",
+    //     type: ["IA"],
+    //     technologies: [
+    //         "Python",
+    //         "FastAPI",
+    //         "RAG",
+    //         "LangChain",
+    //         "PostgreSQL",
+    //         "SQLAlchemy",
+    //         "JWT",
+    //         "ChromaDB",
+    //         "Hugging Face",
+    //         "MLflow",
+    //         "DeepEval",
+    //         "Docker",
+    //         "Kubernetes",
+    //         "GitHub Actions",
+    //         "Prometheus",
+    //         "Grafana",
+    //         "Pytest"
+    //     ],
+    //     image: "/assets/images/projects/mediassist-pro.png",
+    //     githubUrl: "https://github.com/bouchramilo/MediAssist",
+    //     demoUrl: "https://github.com/bouchramilo/MediAssist_frontend"
+    // },
     {
         id: 11,
         title: "YouQuote",
@@ -144,7 +172,7 @@ export const projects = [
         description: "MediAssist Pro est un assistant IA basé sur une architecture RAG optimisée permettant aux laboratoires d’accéder instantanément à la documentation technique et aux guides de dépannage des équipements biomédicaux. Le système combine LangChain, LLM, vectorisation d’embeddings et recherche sémantique pour fournir des réponses précises, sourcées et actionnables. Le projet intègre une API sécurisée (JWT), un pipeline LLMOps avec MLflow, une CI/CD vers Kubernetes, ainsi qu’un monitoring complet avec Prometheus et Grafana.",
         type: ["IA"],
         technologies: ["Python", "FastAPI", "LangChain", "PostgreSQL", "ChromaDB", "MLflow", "LLMOps", "DeepEval", "Docker", "Kubernetes", "Prometheus", "Grafana", "JWT"],
-        image: "/assets/images/projects/mediassist.png",
+        image: "/assets/images/projects/mediassist-pro.png",
         githubUrl: "https://github.com/bouchramilo/MediAssist",
         demoUrl: "#"
     },
