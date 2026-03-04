@@ -23,7 +23,7 @@ export const skills = [
             { name: "SQL (MySQL, PostgreSQL)" },
             { name: "NoSQL (MongoDB)" },
             { name: "Data Warehouse (Snowflake)" },
-            { name: "ChromaDB" }
+            { name: "ChromaDB, Qdrant" }
         ]
     },
     {

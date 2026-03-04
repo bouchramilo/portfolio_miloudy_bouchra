@@ -153,10 +153,38 @@ export const projects = [
         title: "Pipeline MLOps – Déploiement & Monitoring d’un Service de Prédiction ML",
         description: "Projet réalisé en binôme consistant à concevoir une chaîne MLOps complète pour le déploiement d’un modèle de Machine Learning via une API FastAPI. Le système intègre le tracking et le versioning des modèles avec MLflow, une pipeline CI/CD automatisée avec GitHub Actions, la conteneurisation Docker et un monitoring temps réel avec Prometheus et Grafana. L’API expose des métriques (/metrics) permettant de superviser la latence, les erreurs, les performances et l’état du conteneur en production.",
         type: ["IA"],
-        technologies: ["Python","FastAPI","Scikit-learn","MLflow","Docker","GitHub Actions","Prometheus","Grafana","Pytest","MLOps"],
+        technologies: ["Python", "FastAPI", "Scikit-learn", "MLflow", "Docker", "GitHub Actions", "Prometheus", "Grafana", "Pytest", "MLOps"],
         image: "/assets/images/projects/MLOpsFlow.png",
         githubUrl: "https://github.com/bouchramilo/MLOpsFlow",
         demoUrl: "#"
+    },
+    {
+        id: 16,
+        title: "CliniQ – Assistant Décisionnel Clinique basé sur une architecture RAG",
+        description: "Conception et développement d’un assistant médical intelligent basé sur une architecture Retrieval-Augmented Generation (RAG). La solution permet aux professionnels de santé d’accéder instantanément à des protocoles médicaux contextualisés à partir de documents PDF indexés. Le projet intègre un pipeline RAG complet (chunking optimisé, embeddings, vector store, retrieval avancé avec query expansion et reranking) ainsi qu’un backend FastAPI sécurisé (JWT, PostgreSQL). La solution inclut également une approche LLMOps avec MLflow (tracking des paramètres, logging des métriques RAG avec DeepEval), une pipeline CI/CD automatisée, la conteneurisation Docker et un monitoring temps réel via Prometheus & Grafana.",
+        type: ["IA"],
+        technologies: [
+            "Python",
+            "FastAPI",
+            "RAG",
+            "LangChain",
+            "PostgreSQL",
+            "SQLAlchemy",
+            "JWT",
+            "Qdrant",
+            "Hugging Face",
+            "MLflow",
+            "DeepEval",
+            "Docker",
+            "GitHub Actions",
+            "Prometheus",
+            "Grafana",
+            "React",
+            "TailwindCSS"
+        ],
+        image: "/assets/images/projects/cliniq.png",
+        githubUrl: "https://github.com/bouchramilo/CliniQ",
+        demoUrl: "https://github.com/bouchramilo/CliniQ_Frontend-"
     }
 
 
