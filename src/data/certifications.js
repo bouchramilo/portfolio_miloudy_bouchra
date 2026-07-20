@@ -1,5 +1,10 @@
 export const certifications = [
     {
+        name: "AI-900 – Certification Azure AI Fundamentals",
+        org: "Microsoft Azure",
+        logo: null
+    },
+    {
         name: "L'essentiel de GitHub Actions",
         org: "LinkedIn",
         logo: null 
@@ -9,11 +14,11 @@ export const certifications = [
         org: "LinkedIn",
         logo: null
     },
-    {
-        name: "Laravel & PHP",
-        org: "Coursera",
-        logo: null
-    },
+    // {
+    //     name: "Laravel & PHP",
+    //     org: "Coursera",
+    //     logo: null
+    // },
     {
         name: "L'essentiel de Kubernetes",
         org: "LinkedIn",
@@ -29,5 +34,4 @@ export const certifications = [
         org: "LinkedIn",
         logo: null
     },
-    
 ];

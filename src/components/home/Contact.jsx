@@ -28,7 +28,7 @@ export default function Contact() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                         <a
-                            href="mailto:contact@example.com"
+                            href="mailto:bouchramiloudy27@gmail.com"
                             className="flex items-center justify-center gap-3 p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-colors group"
                         >
                             <div className="p-3 bg-light-primary dark:bg-dark-primary rounded-full text-white group-hover:scale-110 transition-transform">
@@ -36,7 +36,7 @@ export default function Contact() {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-bold text-white">Email</h4>
-                                <p className="text-sm text-gray-300">miloudybouchra01@gmail.com</p>
+                                <p className="text-sm text-gray-300">bouchramiloudy27@gmail.com</p>
                             </div>
                         </a>
 
