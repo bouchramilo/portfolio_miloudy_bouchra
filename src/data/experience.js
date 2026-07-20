@@ -11,6 +11,6 @@ export const experience = [
         role: "Stage – Développeuse Full Stack & Intelligence Artificielle",
         company: "AI-HUB, Rabat",
         period: "05/2026 – Présent (08/2026)",
-        description: "- Développement d'une application web avec Next.js, TypeScript et Supabase\n- Implémentation de fonctionnalités front-end et back-end\n- Intégration d'un LLM (Gemini) pour automatiser l'analyse et la génération de rapports\n- Optimisation des performances, correction de bugs et déploiement sur Vercel\n- Collaboration avec l'équipe dans un environnement Agile"
+        description: "- Développement d'une application web avec Next.js, TypeScript et Supabase\n- Implémentation de fonctionnalités front-end et back-end\n- Intégration des LLMs pour l'automatisation des tâches\n- Optimisation des performances, correction de bugs et déploiement sur Vercel\n- Collaboration avec l'équipe dans un environnement Agile"
     },
 ];
